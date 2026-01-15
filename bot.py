@@ -8,6 +8,28 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 import asyncio
 import json
 import os
+from flask import Flask
+from threading import Thread
+
+# Flask web server (Render uchun)
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot ishlayapti! ✅"
+
+@app.route('/health')
+def health():
+    return "OK", 200
+
+def run_flask():
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
+
+def keep_alive():
+    t = Thread(target=run_flask)
+    t.daemon = True
+    t.start()
 
 # Logging sozlamalari
 logging.basicConfig(level=logging.INFO)
