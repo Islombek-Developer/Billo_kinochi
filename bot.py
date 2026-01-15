@@ -522,6 +522,8 @@ async def get_movie(message: types.Message):
 
 # Botni ishga tushirish
 async def main():
+    keep_alive()  # Flask serverni ishga tushirish
+    await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
 if __name__ == '__main__':
