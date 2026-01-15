@@ -1,5 +1,4 @@
-
 aiohttp
 aiofiles
 Flask
-aiogram==3.*
+aiogram
