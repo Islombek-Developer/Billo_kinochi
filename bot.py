@@ -37,8 +37,8 @@ logging.basicConfig(level=logging.INFO)
 # Bot sozlamalari
 BOT_TOKEN = "8121611417:AAHNLY6WrAvtugzNlCYDm4FUcUyjDSW45Ac"  # @BotFather dan olingan token
 ADMIN_ID = 6965587290 # Sizning Telegram ID raqamingiz
-CHANNEL_USERNAME = "@KamputerBek"  # Kanalingiz username (@ bilan)
-CHANNEL_ID = -1002801254971  # Kanalingiz ID raqami
+CHANNEL_USERNAME = "@kinochibillo"  # Kanalingiz username (@ bilan)
+CHANNEL_ID = -1003346732387  # Kanalingiz ID raqami
 BANNER_FILE_ID = "AgACAgIAAxkBAAMzaWj1mWZEaW1BTKyZeoH9m6cZ0BcAAiIMaxstLkhLzNObqwHBbe4BAAMCAAN5AAM4BA"  # Banner rasm file_id (birinchi yuborilgandan keyin olinadi)
 
 # Ma'lumotlar fayllari
